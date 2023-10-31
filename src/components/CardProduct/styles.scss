@@ -1,0 +1,39 @@
+@import "../../theme/";
+
+.card {
+    display: flex;
+    margin: $space-sm;
+    
+    .contain-info {
+        margin-left: $space-sm;
+        margin-top: $space-lg;
+        min-width: 50vw;
+
+        img {
+            margin-left: 5px;
+        };
+
+        span {
+            font-size: $text-size-lg;
+            padding-bottom: $space-lg;
+        }; 
+
+        p {
+            font-size: $text-size-md;
+            margin-top: $space-lg;
+        };
+    };
+
+    .image-product {
+        width: 180px;
+        height: 180px;
+        border-radius: $border-radius;
+    };
+
+    p {
+        margin-top: $space-lg;
+        font-size: $text-size-sm;
+        color: $gray-medium-color;
+    };
+};
+
