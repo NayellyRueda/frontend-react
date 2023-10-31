@@ -5,7 +5,6 @@
   line-height: $line-height-sm;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: $gray-dark-color;
   background-color: $background-color;
   margin: 0;
@@ -15,4 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+};
+
+body {
+    margin: 0;
+};

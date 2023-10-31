@@ -1,0 +1,41 @@
+@import "../../theme";
+
+.header {
+    background-color: $yellow-color;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+        font-size: 24px;
+    }
+
+    img {
+        margin-right: 15px;
+    }
+  
+    .search-bar {
+        display: flex;
+        input {
+            width: 70vw;
+            padding: 8px;
+            border: none;
+            margin-right: 0px;
+            font-size: $text-size-md;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
+        }
+    
+        button {
+            background-color: $background-color;
+            color: white;
+            border: none;
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            padding: 8px 8px;
+            cursor: pointer;
+        }
+    }
+};
