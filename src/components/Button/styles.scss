@@ -1,0 +1,16 @@
+@import "../../theme/";
+
+button {
+    background-color: $blue-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    width: 100%;
+    cursor: pointer;
+
+    p {
+        font-size: $text-size-sm;
+        color: white;
+        border: none;
+    };
+};
