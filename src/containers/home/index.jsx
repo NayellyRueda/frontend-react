@@ -2,6 +2,6 @@
 export default function Home(){
 
     return(
-        <div>Hola Mundo</div>
+        <div>Hola Mundos</div>
     )
 }
