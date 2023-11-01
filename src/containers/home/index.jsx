@@ -1,5 +1,5 @@
 import CardProduct from "../../components/CardProduct";
-import Header from "../../components/Header";
+import { Header, BackgroundContent } from "../../components";
 import "./styles.scss";
 
 export default function Home(){
@@ -7,10 +7,10 @@ export default function Home(){
     return(
         <>
             <Header/>
-            <div className="container">
+            <BackgroundContent>
                 <CardProduct/>
                 <CardProduct/>
-            </div>
+            </BackgroundContent>
         </>
     )
 };

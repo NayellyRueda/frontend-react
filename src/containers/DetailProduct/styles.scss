@@ -1,0 +1,23 @@
+@import "../../theme/";
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  
+    .left-column {
+        padding: 0px; 
+
+        .title {
+            font-size: $text-size-2lg;
+        }
+
+        .description {
+            font-size: $text-size-2sm;
+        }
+    };
+  
+    .right-column {
+        padding: 0px; 
+    };
+};

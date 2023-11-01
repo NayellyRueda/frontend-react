@@ -1,8 +1,9 @@
+import { Header } from "../../components/";
 
 export default function Results() {
     return (
         <div>
-            <p>Resultados</p>
+            <Header/>
         </div>
     )
 }
