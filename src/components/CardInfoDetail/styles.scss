@@ -1,0 +1,17 @@
+@import "../../theme/";
+
+.product-info {
+    color: $gray-medium-color;
+    font-size: $text-size-sm;
+}
+  
+.product-title {
+    font-weight: bold;
+    font-size: $text-size-lg;
+    color: $gray-dark-color;
+}
+  
+.product-price {
+    font-size: $text-size-xlg;
+    color: $gray-dark-color;
+}
