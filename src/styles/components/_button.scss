@@ -1,6 +1,6 @@
 @import "../../theme/";
 
-button {
+.primary-button {
     background-color: $blue-color;
     color: white;
     border: none;
@@ -8,7 +8,7 @@ button {
     width: 100%;
     cursor: pointer;
 
-    p {
+    .button-text {
         font-size: $text-size-sm;
         color: white;
         border: none;

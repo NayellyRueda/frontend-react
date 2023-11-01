@@ -1,9 +1,8 @@
-import "./styles.scss";
 
 export default function Button({ text }) {
     return (
-        <button>
-            <p>{text}</p>
+        <button className="primary-button">
+            <p className="button-text">{text}</p>
         </button>
     )
 };
