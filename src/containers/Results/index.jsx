@@ -3,7 +3,11 @@ import { Header } from "../../components/";
 export default function Results() {
     return (
         <div>
-            <Header/>
+            <BreadCrumbs/>
+            <BackgroundContent>
+                <CardProduct/>
+                <CardProduct/>
+            </BackgroundContent>
         </div>
     )
 }

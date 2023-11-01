@@ -7,12 +7,7 @@ export default function Home(){
 
     return(
         <>
-            <Header/>
-            <BreadCrumbs/>
-            <BackgroundContent>
-                <CardProduct/>
-                <CardProduct/>
-            </BackgroundContent>
+            <p>Home</p>
         </>
     )
 };

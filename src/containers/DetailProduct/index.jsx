@@ -4,7 +4,6 @@ import "./styles.scss";
 export default function DetailProduct(){
     return (
         <>
-            <Header/>
             <BreadCrumbs/>
             <BackgroundContent>
                 <div className="detail-container">
