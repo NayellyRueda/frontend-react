@@ -1,7 +1,7 @@
-import Home from './containers/home';
+import { AppRouter } from './routers/appRouter';
 
 export const App = () => {
     return (
-        <Home />
+        <AppRouter />
     )
 };
