@@ -9,7 +9,8 @@
         padding: 0px; 
 
         img {
-            width: 680px;
+            width: 80%;
+            max-width: 680px;
         }
 
         .title {
@@ -19,6 +20,7 @@
         .description {
             font-size: $text-size-2sm;
             line-height: 20px;
+            color: $gray-medium-color;
         }
     };
   

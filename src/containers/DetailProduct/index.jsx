@@ -27,14 +27,14 @@ export default function DetailProduct(){
                     <div className="left-column">
                         {/* Content column left */}
                         <div className="image-container">
-                            <img src={ detail.item.picture ?? imageNotFound} alt="Image product" />
+                            <img src={ detail.item?.picture ?? imageNotFound} alt="Image product" />
                         </div>
                         <p className="title">Descripción del producto</p>
-                        <p className="description">{detail?.item.description ?? "Sin descripción"}</p>
+                        <p className="description">{detail.item.description ?? "Sin descripción"}</p>
                     </div>
                     <div className="right-column">
                         {/* Content column right */}
-                        <CardInfoDetail {...detail.item}/>
+                        <CardInfoDetail {...detail?.item}/>
                     </div>
                 </div>         
             </BackgroundContent>

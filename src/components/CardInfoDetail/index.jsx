@@ -10,8 +10,8 @@ export default function CardInfoDetail({ ...detail }){
     return (
         <div>
             <p className="product-info">{detail?.condition} - {detail?.sold_quantity} vendidos</p>
-            <p className="product-title">{detail.title}</p>
-            <p className="product-price">{formater.format(detail.price.amount)}</p>
+            <p className="product-title">{detail?.title}</p>
+            <p className="product-price">{formater.format(detail.price.amount) ?? "$ 0"}</p>
             <Button text="Comprar"/>
         </div>
     );

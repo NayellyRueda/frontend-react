@@ -3,11 +3,25 @@
 .card-products {
     display: flex;
     margin: $space-sm;
+    width: 100%;
+
+    .card-image {
+        width: 20%;
+    }
+
+    .card-state-name {
+        width: 20%;
+        
+        .text-state-name{
+            text-align: center;
+        }
+    };
     
     .contain-info {
         margin-left: $space-sm;
         margin-top: $space-lg;
-        min-width: 50vw;
+        width: 60%;
+        text-wrap: wrap;
 
         img {
             margin-left: 5px;
@@ -25,16 +39,16 @@
         };
     };
 
-    .image-product {
-        width: 180px;
-        height: 180px;
-        border-radius: $border-radius;
-    };
-
     p {
         margin-top: $space-lg;
         font-size: $text-size-sm;
         color: $gray-medium-color;
+    };
+
+    .image-product {
+        width: 180px;
+        height: 180px;
+        border-radius: $border-radius;
     };
 
     .separator {
