@@ -2,14 +2,11 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getSearchProducts } from '../helpers/getSearchProducts';
 
-export const useFetchProducts = ( productName, dependency = null ) => {
+export const useFetchProducts = ( productName ) => {
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState( true );
 
-    useEffect(() => {
-        dependency != null && getProducts(); 
-    },[dependency]);
 
     const getProducts = async() => {
         setIsLoading(true);
@@ -25,7 +22,7 @@ export const useFetchProducts = ( productName, dependency = null ) => {
     
     useEffect( () => {
         getProducts();
-    }, []);
+    }, [productName]);
 
 
     return {

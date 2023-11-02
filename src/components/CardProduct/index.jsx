@@ -1,12 +1,11 @@
 import PropType from 'prop-types';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import shipping from "../../assets/ic_shipping.png";
 import imageNotFound from "../../assets/no_image.jpg";
 import "./styles.scss";
 import { useFormatPrice } from '../../hooks';
 
 export default function CardProduct({ ...product }){
-    const navigate = useNavigate();
 
     let formater = useFormatPrice();
 

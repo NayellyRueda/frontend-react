@@ -6,7 +6,7 @@ import "./styles.scss";
 
 export default function Results() {
     let [searchParams] = useSearchParams();
-    const { products, isLoading } = useFetchProducts( searchParams, searchParams );
+    const { products, isLoading } = useFetchProducts( searchParams );
     
     if(isLoading){
         return (
