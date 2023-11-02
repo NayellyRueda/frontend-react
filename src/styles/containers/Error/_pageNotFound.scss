@@ -1,0 +1,19 @@
+@import "../../../theme/index.scss";
+
+.page-not-found {
+	width: 90%;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px;
+    margin: auto;
+    position: absolute;
+
+    h1 {
+        font-size: $text-size-xlg;
+        line-height: 63px;
+        text-align: center;
+    }
+};

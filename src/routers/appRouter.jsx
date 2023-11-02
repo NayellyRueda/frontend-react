@@ -1,8 +1,13 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-
-import Home from '../containers/home';
-import Results from '../containers/Results';
-import DetailProduct from '../containers/DetailProduct';
+import { 
+    Routes, 
+    Route, 
+    BrowserRouter 
+} from 'react-router-dom';
+import {  
+    Home,
+    Results, 
+    DetailProduct,
+} from '../containers';
 
 export const AppRouter = () => {
     return (
