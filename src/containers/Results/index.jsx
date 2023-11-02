@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { BackgroundContent, BreadCrumbs, CardProduct, Spinner, NoResults } from "../../components";
 import { useSearchParams } from "react-router-dom";
 import { useFetchProducts } from "../../hooks/useFetchProducts";
+import "./styles.scss";
 
 export default function Results() {
     let [searchParams] = useSearchParams();
@@ -20,6 +21,7 @@ export default function Results() {
                 {products?.items?.map((product, index) => (
                     <Fragment key={index}>
                         <CardProduct {...product} />
+                        <div className="divider" />
                     </Fragment>
                 ))}
                 {products.items.length === 0 && (

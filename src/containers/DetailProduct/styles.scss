@@ -8,12 +8,17 @@
     .left-column {
         padding: 0px; 
 
+        img {
+            width: 680px;
+        }
+
         .title {
             font-size: $text-size-2lg;
         }
 
         .description {
             font-size: $text-size-2sm;
+            line-height: 20px;
         }
     };
   
