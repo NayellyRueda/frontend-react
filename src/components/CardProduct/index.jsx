@@ -1,16 +1,16 @@
 import PropType from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import shipping from "../../assets/ic_shipping.png";
 import "./styles.scss";
+import { useFormatPrice } from '../../hooks';
 
 export default function CardProduct({ ...product }){
+    const navigate = useNavigate();
 
-    let formater = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: product.price.currency,
-    });
+    let formater = useFormatPrice();
 
     return(
-        <div className="card-products">
+        <div className="card-products" onClick={() => navigate(`/items/${product.id}`)}>
             <img src={product.picture} alt="Image product" className="image-product"/>
             <div className="contain-info">
                 <div>
