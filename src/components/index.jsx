@@ -4,6 +4,8 @@ import Button from "./Button";
 import Header from "./Header";
 import CardProduct from "./CardProduct";
 import CardInfoDetail from "./CardInfoDetail";
+import Spinner from "./Spinner";
+import NoResults from "./NoResults";
 
 export {
     BackgroundContent,
@@ -11,5 +13,7 @@ export {
     Button,
     Header,
     CardProduct,
-    CardInfoDetail
+    CardInfoDetail,
+    Spinner,
+    NoResults
 };

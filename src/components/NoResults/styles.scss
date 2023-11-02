@@ -1,0 +1,14 @@
+@import "../../theme";
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+  
+    p {
+        font-size: $text-size-md;
+        color: $gray-medium-color;
+        font-weight: 700;
+    }
+}

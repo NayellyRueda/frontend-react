@@ -1,7 +1,8 @@
 import { 
     BackgroundContent, 
     CardInfoDetail, 
-    BreadCrumbs 
+    BreadCrumbs, 
+    Spinner
 } from "../../components";
 import { useParams } from "react-router-dom";
 import { useFetchDetail } from "../../hooks/useFetchDetail";
@@ -13,10 +14,10 @@ export default function DetailProduct(){
 
     if( isLoading ){
         return (
-            <h2>Cargando...</h2>
+           <Spinner/> 
         )
     };
-    
+
     return (
         <>
             <BreadCrumbs/>

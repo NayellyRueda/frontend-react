@@ -1,15 +1,16 @@
 import PropType from 'prop-types';
 import "./styles.scss";
-export default function BreadCrumbs({category}) {
+export default function BreadCrumbs({ category }) {
+
+    const categories = category?.join(" > ") ?? "";
 
     return (
         <div className="breadcrumbs-container">
-            <p>{category}</p>
-            <p>{`>`}</p>
+            <p className='breadcrumb-text'>{categories} </p>
         </div>
     )
 };
 
 BreadCrumbs.propTypes = {
-    category: PropType.string
+    category: PropType.array
 };
