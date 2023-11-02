@@ -6,7 +6,7 @@ export default function CardProduct({ ...product }){
 
     let formater = new Intl.NumberFormat('en-US', {
         style: 'currency',
-        currency: 'USD',
+        currency: product.price.currency,
     });
 
     return(
@@ -14,12 +14,12 @@ export default function CardProduct({ ...product }){
             <img src={product.picture} alt="Image product" className="image-product"/>
             <div className="contain-info">
                 <div>
-                    <span>{formater.format(product.price.currency)}</span>
+                    <span>{formater.format(product.price.amount)}</span>
                     <img src={shipping} alt="Info send"/>
                 </div>
                 <p>{product.title}</p>
             </div>
-            <p>Capital Federal</p>
+            <p>{product.state_name}</p>
         </div>
     );
 }

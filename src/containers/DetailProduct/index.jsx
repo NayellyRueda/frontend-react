@@ -9,7 +9,6 @@ import "./styles.scss";
 export default function DetailProduct(){
     const { detail, loader } = useFetchDetail("MLA928610456");
     
-    console.log("detail", detail, loader);
 
     return (
         <>
