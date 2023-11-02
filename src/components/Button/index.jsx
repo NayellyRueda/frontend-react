@@ -1,3 +1,4 @@
+import "./styles.scss";
 
 export default function Button({ text, width }) {
     const buttonStyles = {
