@@ -1,9 +1,16 @@
+import PropType from 'prop-types';
 import "./styles.scss";
+export default function BreadCrumbs({category}) {
 
-export default function BreadCrumbs() {
+    console.log(category);
     return (
         <div className="breadcrumbs-container">
-            <p>{`electrónicos, Audio y Video > iPod > Reproductores`}</p>
+            <p>{category}</p>
+            <p>{`>`}</p>
         </div>
     )
+};
+
+BreadCrumbs.propTypes = {
+    category: PropType.string
 };

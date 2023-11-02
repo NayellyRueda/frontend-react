@@ -1,7 +1,16 @@
-import { BackgroundContent, CardInfoDetail, Header, BreadCrumbs } from "../../components";
+import { 
+    BackgroundContent, 
+    CardInfoDetail, 
+    BreadCrumbs 
+} from "../../components";
+import { useFetchDetail } from "../../hooks/useFetchDetail";
 import "./styles.scss";
 
 export default function DetailProduct(){
+    const { detail, loader } = useFetchDetail("MLA928610456");
+    
+    console.log("detail", detail, loader);
+
     return (
         <>
             <BreadCrumbs/>

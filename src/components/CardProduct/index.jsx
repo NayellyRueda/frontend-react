@@ -1,18 +1,29 @@
+import PropType from 'prop-types';
 import shipping from "../../assets/ic_shipping.png";
 import "./styles.scss";
 
-export default function CardProduct(){
+export default function CardProduct({ ...product }){
+
+    let formater = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    });
+
     return(
         <div className="card-products">
-            <img src="https://http2.mlstatic.com/D_627704-MLA72507457394_102023-O.jpg" alt="Image product" className="image-product"/>
+            <img src={product.picture} alt="Image product" className="image-product"/>
             <div className="contain-info">
                 <div>
-                    <span>$ 1.980</span>
+                    <span>{formater.format(product.price.currency)}</span>
                     <img src={shipping} alt="Info send"/>
                 </div>
-                <p>Apple ipod Touch 5g 16gb Negro Igual A Nuevo Completo único!</p>
+                <p>{product.title}</p>
             </div>
             <p>Capital Federal</p>
         </div>
     );
 }
+
+CardProduct.propTypes = {
+    product: PropType.object
+};
