@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { getSearchProducts } from '../helpers/getSearchProducts';
 
 export const useFetchProducts = ( productName, dependency = null ) => {
- 
+    const navigate = useNavigate();
     const [products, setProducts] = useState([]);
     const [isLoading, setIsLoading] = useState( true );
 
@@ -16,7 +17,7 @@ export const useFetchProducts = ( productName, dependency = null ) => {
             const newProduct = await getSearchProducts( productName );
             setProducts(newProduct);
         } catch {
-            console.error("Error in get product");
+            navigate('/404');
         } finally {
             setIsLoading(false);
         }

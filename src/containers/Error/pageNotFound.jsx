@@ -7,14 +7,7 @@ const PageNotFound = () => {
 
   return (
     <div className="page-not-found">
-        <h1>:( ha  ocurrido un error. Por favor intentelo de nuevo.</h1>
-        <br />
-        <Button
-            width="20%"
-            text="Volver a intentarlo"
-        >
-            Try Again
-        </Button>
+        <h1>:( Página no encontrada.</h1>
     </div>
 
   );
